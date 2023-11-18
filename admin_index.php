@@ -3,7 +3,7 @@
         session_start();
         require_once('config/db.php');
         // var_dump($_SESSION['user_login']);
-
+// test
         if(!isset($_SESSION['admin_login'])) {
             $_SESSION['error'] = 'Please login!';
             header('location: admin_login.php');

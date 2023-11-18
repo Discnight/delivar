@@ -12,7 +12,8 @@
     GROUP BY cars.c_id, sellers.s_firstname, sellers.s_lastname, sellers.s_lineid 
     ORDER BY MAX(cars.c_id) DESC;
     ';
-    
+                            // <!-- this is for testing -->
+
     $stmt = $conn->prepare($query);
     $stmt->execute();
     $cars = $stmt->fetchAll(PDO::FETCH_ASSOC);
